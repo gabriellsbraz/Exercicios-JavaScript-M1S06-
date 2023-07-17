@@ -10,8 +10,23 @@
 
 // Utilize as funções importadas para calcular e exibir no console a soma, a multiplicação e a média dos elementos do array fornecido pelo usuário.
 
-function multiplicaArray(array) {
-  return array.reduce((total, quantidade) => total * quantidade, 1);
-}
 
-module.exports = multiplicaArray;
+// import {calculaMedia} from "./calculaMedia"
+// import {multiplicaArray} from "./multiplicaArray"
+// import {somaArray} from "./somaArray"
+
+const somaArray = require('./somaArray');
+const multiplicaArray = require('./multiplicaArray');
+const calculaMedia = require('./calculaMedia');
+
+const numeros = [
+  15.5, 28.4, 32.13
+]
+
+const soma = somaArray(numeros);
+const multiplicacao = multiplicaArray(numeros);
+const media = calculaMedia(numeros);
+
+console.log(`A soma de todos os numero é ${soma}`);
+console.log(`A multiplicação de todos os numero é ${multiplicacao}`);
+console.log(`A media dos numeros é ${media}`);

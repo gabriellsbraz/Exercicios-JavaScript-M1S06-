@@ -11,3 +11,9 @@
 // Utilize as funções importadas para calcular e exibir no console a soma, a multiplicação e a média dos elementos do array fornecido pelo usuário.
 
 
+function calculaMedia(array){
+  const soma = array.reduce((total, quantidade) => total + quantidade, 0);
+  return soma / array.length;
+}
+
+module.exports = calculaMedia;

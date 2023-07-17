@@ -11,3 +11,9 @@
 // Utilize as funções importadas para calcular e exibir no console a soma, a multiplicação e a média dos elementos do array fornecido pelo usuário.
 
 
+function somaArray(array) {
+  return array.reduce((total, quantidade) => total + quantidade, 0);
+}
+
+module.exports = somaArray;
+
